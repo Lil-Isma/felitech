@@ -1,0 +1,13 @@
+{
+  "name": "adopt-a-cat",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/adopt-a-cat/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project adopt-a-cat --web",
+  "targets": {
+    "serve": {
+      "dependsOn": ["adopt-a-cat-api:serve"]
+    }
+  }
+}
